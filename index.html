@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>A Special Message for Joy ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <main id="game-container">
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <section id="start-screen">
+            <span class="step-tag">Aberdeen, Feb 3rd</span>
+            <h1 class="serif">Hi Baby. ✨</h1>
+            <p>From Castle Street (Stop J2) to the University of Aberdeen, every moment with you has been a masterclass in happiness.</p>
+            <button class="main-btn" onclick="updateProgress(33); nextScreen('q1')">Continue our story</button>
+        </section>
+
+        <section id="q1" hidden>
+            <h1 class="serif">A Question for You...</h1>
+            <p>Joy, being International Students here has been an adventure, but I want you by my side for the whole journey.</p>
+            <h2 style="color: #ff2d55; margin-bottom: 20px;">Will you be my girlfriend?</h2>
+            
+            <div class="proposal-buttons">
+                <button class="card-btn yes-btn" onclick="handleProposal('YES')">YES! ❤️</button>
+                <button class="card-btn no-btn" onclick="handleProposal('NO')">Maybe? 😊</button>
+            </div>
+        </section>
+
+        <section id="screenshot-screen" hidden>
+            <h1 class="serif">Wait! One more thing...</h1>
+            <div class="instruction-box">
+                <p>Victor wants to keep this moment forever. 📸</p>
+                <strong>Please take a screenshot of your choice and send it to him on WhatsApp right now!</strong>
+            </div>
+            <p style="font-size: 0.9rem; margin-top: 15px;">Once you've sent it, click below to see your Valentine's surprise.</p>
+            <button class="main-btn" onclick="updateProgress(100); nextScreen('final')">I've sent it!</button>
+        </section>
+
+        <section id="final" hidden>
+            <div class="success-icon">🌹</div>
+            <h1 class="glow-text serif">Happy Valentine's Day!</h1>
+            <p>To my world and my new favorite person. I love you, Joy!</p>
+            <div class="heart-icon">💖</div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
