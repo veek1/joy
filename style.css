@@ -1,0 +1,48 @@
+:root {
+    --gold: #d4af37;
+    --deep-red: #800000;
+    --ios-pink: #ff2d55;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #000; /* Darker, more elegant background */
+    height: 100vh;
+    display: flex; justify-content: center; align-items: center;
+    color: white; text-align: center;
+}
+
+.serif { font-family: 'Playfair Display', serif; }
+
+#game-container {
+    width: 88%; max-width: 390px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    border-radius: 40px; border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 35px; box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+}
+
+.instruction-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px; border-radius: 20px;
+    border: 1px dashed var(--ios-pink);
+    margin: 20px 0;
+}
+
+.proposal-buttons {
+    display: flex; gap: 10px; flex-direction: column;
+}
+
+.yes-btn {
+    background: var(--ios-pink) !important;
+    font-size: 1.2rem !important;
+    font-weight: 700;
+}
+
+.no-btn {
+    background: rgba(255,255,255,0.1) !important;
+    font-size: 0.9rem !important;
+}
+
+/* Animations and existing styles from previous steps remain... */
